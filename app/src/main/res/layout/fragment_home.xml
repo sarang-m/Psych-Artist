@@ -1,27 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment">
-    <LinearLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:gravity="center"
-        android:orientation="vertical"
         android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="265dp"
+                android:layout_marginTop="8dp"
+                app:srcCompat="@drawable/outer_circle" />
+            <ImageView
+                android:id="@+id/home_image"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="253dp"
+                app:srcCompat="@drawable/home_image" />
 
-        <!-- TODO: Update blank fragment layout -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_margin="10dp"
-            android:textSize="35sp"
-            android:layout_height="wrap_content"
-            android:text="First screen" />
+        </RelativeLayout>
 
-        <Button
-            android:id="@+id/next_button"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/home_text_linear_layout"
             android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:text="Next" />
-    </LinearLayout>
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/home_heading_text"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/next_button"
+                android:text="Next" />
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </layout>
