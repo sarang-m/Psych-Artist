@@ -5,11 +5,12 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home_heading_text">Find The Right Therapist For You !</string>
     <string name="home_description_text">Answer a few sample questions (don’t worry, everything is confidential) so we can get to know you. Afterwards, we will recommend a therapist based on your specific needs.</string>
-    <string name="depression_chip">Depression</string>
-    <string name="stress_chip">Stress</string>
-    <string name="anxiety_chip">Anxiety</string>
-    <string name="self_esteem_chip">Self Esteem</string>
+    <string name="depression_button">Depression</string>
+    <string name="stress_button">Stress</string>
+    <string name="anxiety_button">Anxiety</string>
+    <string name="self_esteem_button">Self Esteem</string>
     <string name="teenage_button">Teenage</string>
-    <string name="couple_buttton">Couple</string>
+    <string name="couple_button">Couple</string>
     <string name="individual_button">Individual</string>
+    <string name="more_button">More</string>
 </resources>

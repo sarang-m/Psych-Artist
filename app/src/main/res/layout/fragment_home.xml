@@ -8,9 +8,10 @@
         android:layout_height="match_parent">
         <RelativeLayout
             android:layout_width="match_parent"
+            android:layout_margin="16dp"
             android:layout_height="wrap_content">
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/outer_circle_image"
                 android:layout_width="wrap_content"
                 android:layout_height="265dp"
                 android:layout_marginTop="8dp"
@@ -22,37 +23,92 @@
                 android:layout_width="wrap_content"
                 android:layout_height="253dp"
                 app:srcCompat="@drawable/home_image" />
-
-        </RelativeLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:id="@+id/home_text_linear_layout"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:gravity="center"
-            android:orientation="vertical">
-
             <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_marginTop="15dp"
+                android:id="@+id/home_heading_textView"
+                android:layout_marginTop="25dp"
                 android:gravity="center"
-                android:layout_marginStart="25dp"
+                android:layout_below="@+id/outer_circle_image"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto_bold"
                 android:text="@string/home_heading_text"
                 android:textColor="@android:color/black"
                 android:textSize="24sp" />
+            <TextView
+                android:id="@+id/home_text_view"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/home_heading_textView"
+                android:fontFamily="@font/roboto"
+                android:text="@string/home_description_text"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
 
-            <Button
-                android:id="@+id/next_button"
+
+        </RelativeLayout>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="bottom">
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:background="@drawable/next_button"
-                android:text="Next" />
-        </LinearLayout>
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/depression_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:background="@drawable/depression_button_icon"
+                    android:text="@string/depression_button" />
+
+                <Button
+                    android:id="@+id/stress_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/stress_button_icon"
+                    android:padding="10dp"
+                    android:text="@string/stress_button" />
+
+                <Button
+                    android:id="@+id/anxiety_button"
+                    android:padding="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/anxiety_button_icon"
+                    android:text="@string/anxiety_button" />
+
+                <Button
+                    android:id="@+id/self_esteem_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:background="@drawable/self_esteem_button_icon"
+                    android:text="@string/self_esteem_button" />
+
+                <Button
+                    android:id="@+id/more_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:background="@drawable/more_button_icon"
+                    android:text="@string/more_button" />
+            </LinearLayout>
+        </HorizontalScrollView>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </layout>

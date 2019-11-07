@@ -24,9 +24,8 @@ class HomeFragment : Fragment() {
         val binding : FragmentHomeBinding =DataBindingUtil.inflate(inflater,R.layout.fragment_home,
             container,false)
 
-        binding.nextButton.setOnClickListener(Navigation.createNavigateOnClickListener(
-            R.id.action_homeFragment_to_secondScreenFragment)
-        )
+        //binding.nextButton.setOnClickListener(Navigation.createNavigateOnClickListener(
+           // R.id.action_homeFragment_to_secondScreenFragment) )
 
         return  binding.root
     }
